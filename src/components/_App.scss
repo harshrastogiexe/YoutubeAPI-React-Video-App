@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6;
+	color: $nuetral-600;
+}
+
+.split {
+	display: flex;
+	&-sm {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 600px) {
+	.split {
+		&-sm {
+			gap: 1rem;
+			flex-direction: row;
+			padding: 0 2rem;
+		}
+	}
+}

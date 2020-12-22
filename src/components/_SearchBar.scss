@@ -1,0 +1,51 @@
+.searchbar {
+	padding: 1rem;
+	background-color: $nuetral-700;
+
+	form {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		color: $nuetral-000;
+		label {
+			display: block;
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+		input {
+			width: 100%;
+			max-width: 330px;
+			background: $nuetral-600;
+			padding: 10px;
+			border: none;
+			outline: none;
+			color: inherit;
+			border-radius: 0.3rem;
+
+			&::placeholder {
+				color: $nuetral-100;
+				font-size: 1.1rem;
+			}
+			&:hover {
+				background-color: lighten($nuetral-600, 5%);
+			}
+			&:focus {
+				background-color: $nuetral-600;
+			}
+		}
+	}
+}
+@media (min-width: 600px) {
+	.searchbar {
+		form {
+			label {
+				font-size: 1.5rem;
+			}
+			input {
+				max-width: none;
+				flex: 0.4;
+			}
+		}
+	}
+}

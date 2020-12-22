@@ -1,0 +1,21 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+
+	&-fluid {
+		padding: 0;
+	}
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 600px) {
+	.container {
+		padding: 0 2rem;
+	}
+}
